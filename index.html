@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMoto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+     @media (max-width:990px) and (min-width:767px)  {
+       
+        nav{
+          display: none;
+        }
+        .span{
+            display: block;
+        }
+        .box1{
+            display: grid;
+            grid-template-columns: auto auto;
+            /* justify-content: space-betw; */
+        }
+        .card1{
+            width: 50vw;
+        }
+          .card2{
+            width: 50vw;
+        }
+          .card3{
+            width: 50vw;
+        }
+          .card4{
+            width: 50vw;
+        }
+     
+     .first-section{
+        background-size: cover;
+        
+     }
+     .car-box{
+         display: grid;
+         grid-template-columns: auto auto;
+     }
+     .car-sub-card1{
+      width: auto;
+     }
+     }
+     @media (max-width:766px) and (min-width:680px) {
+      nav{
+           display: none;
+     }
+      .span{
+            display: block;
+        }
+         .box1{
+            display: grid;
+            grid-template-columns: auto auto;
+            /* justify-content: space-betw; */
+        }
+       /* .box{
+         text-align: center;
+         gap: 10px;
+       }
+       .box button{
+         margin-left: -8rem;
+         width: 12em;
+       } */
+       .first-section{
+        background-size: cover;
+        
+     }
+     .car-box{
+         display: grid;
+         grid-template-columns:  auto;
+         justify-content: center;
+         overflow-x: scroll;
+         scrollbar-width: none;
+         overflow-y: hidden;
+     }
+         .car-sub-card1{
+      width: auto;
+     }
+     }
+     @media (max-width:680px) and (min-width:567px) {
+        nav{
+           display: none;
+     }
+      .span{
+            display: block;
+        }
+         .box1{
+            display: grid;
+            grid-template-columns: auto auto;
+            /* justify-content: space-betw; */
+        }
+       /* .box{
+         text-align: center;
+         
+       } */
+       .box h1{
+        width: 90vw;
+        
+       }
+       .box button{
+        
+         width: 12em;
+         margin-top: 2rem;
+       }
+       .first-section{
+        background-size: cover;
+        background-position: center;
+        height: 110vh;
+     }
+     .car-box{
+         display: grid;
+         grid-template-columns: auto;
+         justify-content: center;
+          overflow-x: scroll;
+         scrollbar-width: none;
+         overflow-y: hidden;
+     }
+       .car-sub-card1{
+      width: auto;
+     }
+     }
+      @media (max-width:600px) {
+        .box{
+            text-align: center;
+        }
+        .box h1{
+            width: 80vw;
+        }
+          .car-sub-card1{
+      width: auto;
+     }
+      }
+      @media (max-width:566px) and (min-width:450px) {
+        nav{
+            display: none;
+        }
+        .span{
+            display: block;
+        }
+        .second-section h1{
+            width: 90vw;
+            margin-right: 8px;
+            text-align: center;
+        }
+        .second-section{
+            text-align: center;
+        }
+         .box1{
+            display: grid;
+            grid-template-columns: auto auto;
+            /* justify-content: space-betw; */
+        }
+        .car-box{
+         display: grid;
+         grid-template-columns: auto;
+         justify-content: center;
+          overflow-x: scroll;
+         scrollbar-width: none;
+         overflow-y: hidden;
+     }
+       .car-sub-card1{
+      width: auto;
+     }
+     .car-card{
+      width: auto;
+      font-size: 18px;
+     }
+      .car-card h1{
+        font-size: 20px;
+      }
+      .mini-car-card{
+        width: auto;
+      }
+      .mini-car-card h3{
+        font-size: 15px;
+        width: auto;
+      }
+      }
+      @media (max-width:450px) and (min-width:340px) {
+        nav{
+            display: none;
+        }
+        .span{
+            display: block;
+        }
+         .box1{
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            /* justify-content: space-betw; */
+        }
+      
+         .box button{
+         width: 12em;
+         font-size: 15px;
+         
+       }
+       .box h1{
+         width: 70vw;
+        font-size: 20px;
+        
+       }
+        .first-section{
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+     }
+     .second-section{
+        margin-top: 30rem;
+     }
+     .car-box{
+         display: grid;
+         grid-template-columns: auto;
+         justify-content: center;
+          overflow-x: scroll;
+         scrollbar-width: none;
+         overflow-y: hidden;
+     }
+       .car-sub-card1{
+      width: auto;
+     }
+      .mini-car-card{
+        width: auto;
+         display: flex;
+        justify-content: space-around;
+      }
+      .mini-car-card h3{
+        font-size: 13px;
+       
+        width: auto;
+      }
+      .mini-car-card h6{
+        font-size: 13px;
+      }
+       .car-card{
+      width: auto;
+      font-size: 18px;
+     }
+      .car-card h1{
+        font-size: 20px;
+        margin-top:9px;
+      }
+      .car-card  button{
+        font-size: 10px;
+        width: auto;
+      }
+      .gear-box1{
+  display: flex;
+  width: auto;
+  font-size: 15px;
+}
+.gear-box1 img{
+  width: 40px;
+}
+.gear-box2 img{
+  width: 40px;
+}
+.gear-box3 img{
+  width: 40px;
+}
+.gear-box2{
+  display: flex;
+  width: auto;
+   font-size: 15px;
+}
+.gear-box3{
+display: flex;
+width: auto;
+ font-size: 15px;
+}
+
+      }
+     
+      @media (max-width:339px) and (min-width:290px) {
+        .car-card h1{
+        font-size: 20px;
+        margin-top:4px;
+      }
+      .car-card  button{
+        font-size: 8px;
+        width: auto;
+      }
+      .car-card{
+      width: auto;
+      font-size: 13px;
+     }
+      }
+      @media (max-width:290px) and (min-width:250px) {
+        nav{
+          display: none;
+        }
+        .span{
+          display: block;
+        }
+        .box1{
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            /* justify-content: space-betw; */
+        }
+        .box button{
+         width: 12em;
+         font-size: 15px;
+
+        
+       }
+       .box h1{
+         width: 70vw;
+        font-size: 20px;
+        
+       }
+       .first-section{
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+     }
+     .second-section{
+        margin-top: 30rem;
+     }
+     .car-box{
+         display: grid;
+         grid-template-columns: auto;
+         justify-content: center;
+          overflow-x: scroll;
+         scrollbar-width: none;
+         overflow-y: hidden;
+     }
+       .car-sub-card1{
+      width: auto;
+     }
+      .mini-car-card{
+        width: auto;
+      }
+      .mini-car-card h3{
+        font-size: 15px;
+        width: auto;
+      }
+       .car-card{
+      width: auto;
+      font-size: 18px;
+     }
+      .car-card h1{
+        font-size: 20px;
+      }
+      }
+       @media (max-width:250px) and (min-width:100px) {
+        nav{
+          display: none;
+        }
+        .span{
+          display: block;
+        }
+        .box1{
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            /* justify-content: space-betw; */
+        }
+        .box button{
+         width: 12em;
+         font-size: 15px;
+
+         margin-right: 19rem;
+       }
+       .box h1{
+         width: 70vw;
+        font-size: 20px;
+        
+       }
+       .first-section{
+        background-size: cover;
+        background-position: center;
+        height: 80vh;
+     }
+     .second-section{
+        margin-top: 30rem;
+     }
+     .car-box{
+         display: grid;
+         grid-template-columns: auto;
+         justify-content: center;
+          overflow-x: scroll;
+         scrollbar-width: none;
+         overflow-y: hidden;
+     }
+       .car-sub-card1{
+      width: auto;
+     }
+     
+      .mini-car-card{
+        width: auto;
+      }
+      .mini-car-card h3{
+        font-size: 15px;
+        width: auto;
+      }
+       .car-card{
+      width: auto;
+      font-size: 18px;
+     }
+      .car-card h1{
+        font-size: 20px;
+
+      }
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./Screenshot_2025-10-31_221352-removebg-preview.png" alt=""></div>
+        <nav>
+            <ul>
+                <li><a href="ome">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Cars">Cars</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+        </nav>
+         <span class="span"><i class="fa-solid fa-bars" style="color: #000000;"></i></span>
+    </header>
+    
+    <section class="first-section">
+          <div class="box">
+           <h1>Quick and affordable <br> car rentals</h1>
+           <button>Book your ride now <span class="span1">↗</span> </button>
+        </div>
+    </section>
+   <section class="second-section">
+             <h1>Experience comfort, flexibility,  and unbeatable <br> rates—only with our city car rentals</h1>
+          <div class="box1">
+            <div class="card1">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6792312eb7130ce42ca98c25_feature-01.svg" alt="">
+                <h2>Well maintained vehicles</h2>
+                <p>Every car is carefully <br> maintained and serviced for <br> your safety and comfort</p>
+            </div>
+            <div class="card2">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/67502a4df18d537616f62575_feature-02.svg" alt="">
+                <h2>Easy online booking</h2>
+                <p>Car booking made easy <br> with our quick and user <br>-friendly online system.</p>
+            </div>
+            <div class="card3">
+                 <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/67502a4da12a058ea3436e0e_feature-03.svg" alt="">
+                 <h2>Affordable pricing</h2>
+                  <p>Enjoy competitive rates with no <br> hidden fees. Rent the perfect car <br> without breaking the bank.</p>
+            </div>
+            <div class="card4">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/67502a4db4828ad6c7f95f47_feature-04.svg" alt="">
+                  <h2>24/7 support</h2>
+                   <p>We’re here to assist you anytime,<br> anywhere. Drive with peace of <br> mind knowing help is just a call away.</p>
+            </div>
+          </div>
+   </section>
+   <section class="third-section">
+          <div class="car-card">
+             <h1>Our rental car collection</h1>
+              <a href="c"><button>View all vehicles<span class="span1">↗</span> </button></a>
+          </div>
+          <div class="car-box">
+            <div class="car-sub-card1">
+              <img class="img" width="90%" src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d24cd3828c73bb6a6df29_car-07.avif" alt="">
+             <div class="mini-car-card">
+               <h3>Hyundai Verna</h3>
+               <h6>$195 <span >/per day</span></h6>
+             </div>
+             <div class="mini-card1">
+                <div class="gear-box1">
+                   <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg" alt="">
+              <p>Seat <br><span>4</span></p>
+                </div>
+             
+              <div class="gear-box2">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg" alt="">
+               <h5><p>Gearbox</p><br> Automatic</h5>
+              </div>
+               <div class="gear-box3">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg" alt="">
+                <h4><p>Luggage</p><br>3 bags</h4>
+               </div>
+             </div>
+            </div>
+           <div class="car-sub-card1">
+              <img class="img" width="90%" src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d246a08777aecdb41d97f_car-01.avif" alt="">
+             <div class="mini-car-card">
+               <h3>Compact city cruiser</h3>
+               <h6>$150 <span >/per day</span></h6>
+             </div>
+             <div class="mini-card1">
+                <div class="gear-box1">
+                   <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg" alt="">
+              <p>Seat <br><span>4</span></p>
+                </div>
+             
+              <div class="gear-box2">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg" alt="">
+               <h5><p>Gearbox</p><br>Manual</h5>
+              </div>
+               <div class="gear-box3">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg" alt="">
+                <h4><p>Luggage</p><br>2 bags</h4>
+               </div>
+             </div>
+            </div>
+             <div class="car-sub-card1">
+              <img class="img" width="90%" src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d247c699d5c8508c0ae11_car-02.avif" alt="">
+             <div class="mini-car-card">
+               <h3>Spacious SUV</h3>
+               <h6>$195 <span >/per day</span></h6>
+             </div>
+             <div class="mini-card1">
+                <div class="gear-box1">
+                   <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg" alt="">
+              <p>Seat <br><span>7</span></p>
+                </div>
+             
+              <div class="gear-box2">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg" alt="">
+               <h5><p>Gearbox</p><br> Automatic</h5>
+              </div>
+               <div class="gear-box3">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg" alt="">
+                <h4><p>Luggage</p><br>4 bags</h4>
+               </div>
+             </div>
+            </div>
+             <div class="car-sub-card1">
+              <img class="img" width="90%" src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/675d249ddbaeb280005b7dac_car-03.avif" alt="">
+             <div class="mini-car-card">
+               <h3>Luxury Sedan</h3>
+               <h6>$210 <span >/per day</span></h6>
+             </div>
+             <div class="mini-card1">
+                <div class="gear-box1">
+                   <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg" alt="">
+              <p>Seat <br><span>5</span></p>
+                </div>
+             
+              <div class="gear-box2">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg" alt="">
+               <h5><p>Gearbox</p><br> Automatic</h5>
+              </div>
+               <div class="gear-box3">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg" alt="">
+                <h4><p>Luggage</p><br>2 bags</h4>
+               </div>
+             </div>
+            </div>
+              <div class="car-sub-card1">
+              <img class="img" width="90%" src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efb4/6791feb6870fc170aa4a2e67_car-08.png" alt="">
+             <div class="mini-car-card">
+               <h3>Mercedes</h3>
+               <h6>$150 <span >/per day</span></h6>
+             </div>
+             <div class="mini-card1">
+                <div class="gear-box1">
+                   <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396b4ddf4c46d50f6cc4_car-seat.svg" alt="">
+              <p>Seat <br><span>5</span></p>
+                </div>
+             
+              <div class="gear-box2">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bcc42b344a21c720d_gearbox.svg" alt="">
+               <h5><p>Gearbox</p><br>Manual</h5>
+              </div>
+               <div class="gear-box3">
+                <img src="https://cdn.prod.website-files.com/66dc179a1d6aa88848a4efac/6750396bef54164e709fd920_luggage.svg" alt="">
+                <h4><p>Luggage</p><br>2 bags</h4>
+               </div>
+             </div>
+            </div>
+          </div>
+   </section>
+</body>
+</html>
