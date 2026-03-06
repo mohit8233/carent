@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { loginStyles } from '../assets/dummyStyles'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { FaArrowLeft, FaLock, FaUser } from 'react-icons/fa'
+import { FaArrowLeft, FaEye, FaEyeSlash, FaLock, FaUser } from 'react-icons/fa'
 import logo from '../assets/logocar.png'
+import {toast, ToastContainer } from 'react-toastify'
 
 const Login = () => {
     const navigate = useNavigate()
@@ -108,13 +109,44 @@ useEffect(()=>{
                             <div className={loginStyles.form.inputIcon}>
                                 <FaLock/>
                             </div>
-                            <input type="email" name='email' value={credentails.email} onChange={handleChange} placeholder='Enter your email' 
+                            <input type={showPassword ? 'text' : 'password'} name='password' value={credentails.password} onChange={handleChange} placeholder='Enter your password' 
                             required className={loginStyles.form.input} />
+                             <div onClick={togglePasswordVisibilty} className={loginStyles.form.passwordToggle}>
+                                {showPassword? <FaEyeSlash />: <FaEye/>}
+                             </div>
                             </div>
                         </div>
+                        <button type='submit' className={loginStyles.form.submitButton}>
+                           <span className={loginStyles.form.buttonText}>ACCESS PREMIUM GARAGE</span>
+                           <div className={loginStyles.form.buttonHover} />
+                        </button>
                     </form>
+                    <div className={loginStyles.signupSection}>
+                        <p className={loginStyles.signupText}>Don't have an account?</p>
+                        <a href="/signup" className={loginStyles.signupButton}>
+                         CREATE ACCOUNT 
+                        </a>
+                    </div>
                 </div>
             </div>
+               
+                <ToastContainer
+        position="top-right"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        toastStyle={{
+          backgroundColor: '#fb923c',
+          borderRadius: '12px',
+          boxShadow: '0 4px 20px rgba(249, 115, 22, 0.25)'
+        }}
+      />
         </div>
     )
 }
